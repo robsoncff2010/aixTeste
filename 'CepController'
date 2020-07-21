@@ -1,0 +1,21 @@
+
+  [41;1m InvalidArgumentException [49;22m
+
+[39;1m  Attribute [controllers] does not exist.[39;22m
+
+  at [32mD:\laragon\www\app-aixTeste\vendor\laravel\framework\src\Illuminate\Routing\RouteRegistrar.php[39m:[32m92[39m
+    [90m88| [0m[90;3m     */[0m
+    [90m89| [0m[90;3m    [0m[35;1mpublic function [0m[39;1mattribute[0m[35;1m([0m[39;1m$key[0m[35;1m, [0m[39;1m$value[0m[35;1m)[0m
+    [90m90| [0m[35;1m    {[0m
+    [90m91| [0m[35;1m        if (! [0m[39;1min_array[0m[35;1m([0m[39;1m$key[0m[35;1m, [0m[39;1m$this[0m[35;1m->[0m[39;1mallowedAttributes[0m[35;1m)) {[0m
+[31;1m  > [0m[90m92| [0m[35;1m            throw new [0m[39;1mInvalidArgumentException[0m[35;1m([0m[37m"Attribute [[0m[35;1m{[0m[39;1m$key[0m[35;1m}[0m[37m] does not exist."[0m[35;1m);[0m
+    [90m93| [0m[35;1m        }[0m
+    [90m94| [0m
+    [90m95| [0m[35;1m        [0m[39;1m$this[0m[35;1m->[0m[39;1mattributes[0m[35;1m[[0m[39;1mArr[0m[35;1m::[0m[39;1mget[0m[35;1m([0m[39;1m$this[0m[35;1m->[0m[39;1maliases[0m[35;1m, [0m[39;1m$key[0m[35;1m, [0m[39;1m$key[0m[35;1m)] = [0m[39;1m$value[0m[35;1m;[0m
+    [90m96| [0m
+
+  [33m1   [39m[39;1mD:\laragon\www\app-aixTeste\vendor\laravel\framework\src\Illuminate\Routing\Router.php[39;22m:[39;1m1246[39;22m
+  [37m    Illuminate\Routing\RouteRegistrar::attribute("controllers", ["CepController"])[39m
+
+  [33m2   [39m[39;1mD:\laragon\www\app-aixTeste\vendor\laravel\framework\src\Illuminate\Support\Facades\Facade.php[39;22m:[39;1m261[39;22m
+  [37m    Illuminate\Routing\Router::__call("controllers")[39m
